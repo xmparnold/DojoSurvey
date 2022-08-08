@@ -12,8 +12,8 @@ public class HomeController : Controller {
     }
 
     [HttpPost]
-    [Route("survey")]
-    public IActionResult Survey(string name, string location, string language, string comment) {
+    [Route("postresult")]
+    public IActionResult PostResult(string name, string location, string language, string comment) {
 
         ViewBag.Name = name;
         ViewBag.Location = location;
